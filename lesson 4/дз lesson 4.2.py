@@ -11,4 +11,4 @@ if my_list:
     result = sum * last
     print(result)
 else:
-    print("Empty list")
+    print(0)
