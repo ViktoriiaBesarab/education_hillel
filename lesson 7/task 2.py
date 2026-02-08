@@ -1,5 +1,5 @@
 def correct_sentence(text):
-    text = text.capitalize()
+    text = text[0].capitalize() + text[1:]
     if not text.endswith("."):
         text += "."
     return text
