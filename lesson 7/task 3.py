@@ -3,7 +3,7 @@ def second_index(text, some_str):
     if first == -1:
         return None
     second = text.find(some_str, first + len(some_str))
-    if first == -1:
+    if second == -1:
         return None
     return second
 
