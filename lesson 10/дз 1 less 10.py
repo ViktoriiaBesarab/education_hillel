@@ -2,10 +2,10 @@ def pow(x):
     return x ** 2
 
 def some_gen(begin, end, func):
-    current = begin
+    cont = begin
     for _ in range(end):
-        yield current
-        current = func(current)
+        yield cont
+        cont = func(cont)
     yield begin
 
 from inspect import isgenerator
