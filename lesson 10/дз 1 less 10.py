@@ -6,12 +6,11 @@ def some_gen(begin, end, func):
     for _ in range(end):
         yield cont
         cont = func(cont)
-    yield begin
 
 from inspect import isgenerator
 
 gen = some_gen(2, 4, pow)
 isgenerator(gen)
-list(gen)
+result = list(gen)
 print(isgenerator(gen))
-print(list(gen))
+print(result)
