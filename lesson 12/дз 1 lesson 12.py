@@ -14,4 +14,6 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
       return html
 
 result = delete_html_tags("draft (1).html")
+with open("cleaned.txt", "w", encoding="utf-8") as f:
+    f.write(result)
 print(result)
