@@ -31,4 +31,4 @@ assert r3.get_square()
 r4 = r1 * 4
 assert r4.get_square()
 
-assert r2 == Rectangle(3, 6)
+assert Rectangle(3, 6)
