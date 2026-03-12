@@ -1,0 +1,2 @@
+class GroupOverflowException(Exception):
+    pass
