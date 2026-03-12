@@ -11,7 +11,8 @@ class Rectangle:
         return self.width == other.width and self.height == other.height
 
     def __add__(self, other):
-        return Rectangle(self.width + other.width, self.height + other.height)
+        total_square = self.get_square() + other.get_square()
+        return Rectangle(total_square, 1)
 
     def __mul__(self, n):
         return Rectangle(self.width * n, self.height * n)
@@ -27,6 +28,7 @@ assert r2.get_square()
 
 r3 = r1 + r2
 assert r3.get_square()
+print(r3)
 
 r4 = r1 * 4
 assert r4.get_square()
