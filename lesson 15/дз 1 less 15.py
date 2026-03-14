@@ -8,14 +8,15 @@ class Rectangle:
         return self.width * self.height
 
     def __eq__(self, other):
-        return self.width == other.width and self.height == other.height
+        return self.get_square() == other.get_square()
 
     def __add__(self, other):
         total_square = self.get_square() + other.get_square()
         return Rectangle(total_square, 1)
 
     def __mul__(self, n):
-        return Rectangle(self.width * n, self.height * n)
+        new_square = self.get_square() * n
+        return Rectangle(new_square, 1)
 
     def __str__(self):
         return f'{self.width} x {self.height}'
